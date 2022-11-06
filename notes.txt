@@ -1,0 +1,26 @@
+
+
+
+
+
+TODO:
+=====
+
+    - start on boot
+        - /etc/rc.local
+        - # as user pi:  run screen called 'chick', execute the chickenpi node app, on termination run bash (which stops screen from just terminating if you're in there enditing things)
+        - su - pi -c "screen -dmS chick bash -c 'cd /home/pi/chickenpi; sudo node index.js; exec bash'"
+
+    - add git repo
+    - add light sensor (redundency?)
+    - track time
+    - json payload 
+        - negotiated from pihub?
+
+
+DONE:
+=====
+
+/etc/hosts
+    127.0.1.1       chickenpi
+    192.168.1.###   pihub
